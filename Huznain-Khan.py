@@ -30,16 +30,16 @@ except:ugen2 = ['Mozilla/5.0 (Linux; U; Android 2.3.4; pt-pt; SonyEricssonLT18a 
 id,id2,loop,ok,cp,akun,oprek,method,lisensiku,taplikasi,tokenku,uid,lisensikuni= [],[],0,0,0,[],[],[],[],[],[],[],[]
 
 # COLORS
-x = '\33[m' # DEFAULT
-k = '\033[93m' # KUNING +
-h = '\x1b[1;92m' # HIJAU +
-hh = '\033[32m' # HIJAU -
-u = '\033[95m' # UNGU
-kk = '\033[33m' # KUNING -
-b = '\33[1;96m' # BIRU -
-p = '\x1b[0;34m' # BIRU +
+x = '\33[m' # Dare-Devil
+k = '\033[93m' # Devil +
+h = '\x1b[1;92m' # Dare-Devil +
+hh = '\033[32m' # Huznain -
+u = '\033[95m' # Khan
+kk = '\033[33m' # Devil -
+b = '\33[1;96m' # World -
+p = '\x1b[0;34m' # Dare +
 # Converter Bulan
-dic = {'1':'Januari','2':'Februari','3':'Maret','4':'April','5':'Mei','6':'Juni','7':'Juli','8':'Agustus','9':'September','10':'Oktober','11':'November','12':'Desember'}
+dic = {'1':'January','2':'February','3':'March','4':'April','5':'May','6':'June','7':'July','8':'August','9':'September','10':'October','11':'November','12':'December'}
 dic2 = {'01':'Januari','02':'Februari','03':'Maret','04':'April','05':'Mei','06':'Juni','07':'Juli','08':'Agustus','09':'September','10':'Oktober','11':'November','12':'Desember'}
 tgl = datetime.datetime.now().day
 bln = dic[(str(datetime.datetime.now().month))]
@@ -131,17 +131,17 @@ def menu(my_name,my_id):
 		os.system('rm -rf .token.txt')
 		print(x+'['+h+'•'+x+'] Wait ...')
 		time.sleep(1)
-		sw = '# BERHASIL LOG OUT'
+		sw = '# SUCCEED LOG OUT'
 		sol().print(mark(sw, style='green'))
 		exit()
 	else:
-		ric = '# PILIHAN TIDAK ADA DI MENU'
+		ric = '# OPTION NOT AVAILABLE IN MENU'
 		sol().print(mark(ric, style='red'))
 		exit()
 
 # RESULT CHECKER
 def result():
-	cek = '# CEK RESULT CRACK'
+	cek = '# CHECK RESULT CRACK'
 	sol().print(mark(cek, style='green'))
 	kayes = '[01] Check Results Cp\n[02] Check Results Ok\n[00] Back to Menu'
 	kis = nel(kayes, style='cyan')
@@ -150,17 +150,17 @@ def result():
 	if kz in ['1','01']:
 		try:vin = os.listdir('CP')
 		except FileNotFoundError:
-			gada = '# DIREKTORI TIDAK DITEMUKAN'
+			gada = '# DIRECTORY NOT FOUND'
 			sol().print(mark(gada, style='red'))
 			time.sleep(2)
 			back()
 		if len(vin)==0:
-			haha = '# ANDA BELUM MEMILIKI RESULT CP'
+			haha = '# YOU DON'T HAVE RESULTS CP'
 			sol().print(mark(haha, style='yellow'))
 			time.sleep(2)
 			back()
 		else:
-			gerr = '# HASIL CP ANDA'
+			gerr = '# YOUR CP RESULT'
 			sol().print(mark(gerr, style='green'))
 			cih = 0
 			lol = {}
